@@ -26,6 +26,12 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
     <style>
       /* EXERCISE 1
@@ -39,6 +45,25 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - The album duration
             - etc
          */
+      body {
+        background-color: rgb(212, 212, 212);
+      }
+      .album-container {
+      }
+
+      .album-cover {
+      }
+      .album-title {
+      }
+      .album-group {
+      }
+      .album-genre {
+      }
+      .album-duration {
+      }
+      .navbar {
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -46,7 +71,35 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page
         -->
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="#">My Music Collection</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favorites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Releases</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
@@ -54,6 +107,193 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 m-3 mb-3 mt-5 px-0"><h1>My Favorite Albums</h1></div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/237/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/238/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/239/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/240/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/241/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/242/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/243/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/212/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/211/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/248/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/249/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3 m-3 mb-3 px-0">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/251/120/60"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+                quisquam ipsam corporis alias sapiente est.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
@@ -66,7 +306,63 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
-
+    <div class="container">
+      <div class="row">
+        <div class="col-12 m-3 mb-3 mt-5 px-0"><h2>Album Review</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-12 m-3 mb-3 px-0">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/185/600/400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nothing Else Matters</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                quia, dolor sint, fuga hic minus mollitia quas ratione, suscipit
+                id magnam ad perferendis assumenda quod molestias excepturi
+                reprehenderit nobis Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Laborum est libero magnam, tenetur pariatur
+                qui ullam quibusdam commodi voluptatum architecto necessitatibus
+                saepe eligendi eveniet molestias earum consequuntur quisquam
+                optio sint, fugit, doloremque porro alias. Modi adipisci
+                temporibus necessitatibus quas facere aut? Tenetur eligendi nisi
+                fugiat quae minima ipsum ut asperiores. Quaerat voluptatum
+                assumenda, blanditiis illo asperiores vel, expedita, atque
+                provident labore illum fugit libero inventore nostrum? Adipisci
+                aliquid corrupti, praesentium quis facere officiis repellendus
+                architecto similique. Earum neque placeat quia necessitatibus
+                pariatur? Quaerat quibusdam facere voluptatum sequi molestias
+                ullam aspernatur iusto excepturi culpa ducimus atque magnam
+                illum possimus expedita sapiente, labore minus recusandae
+                obcaecati laboriosam omnis aliquid debitis ut? Sapiente deleniti
+                provident cumque rem tenetur sunt, commodi molestias minus vel
+                qui magnam quibusdam illum voluptas officia labore aspernatur
+                eligendi, doloremque a in. Reprehenderit dolorum assumenda
+                necessitatibus autem quod doloremque atque voluptatibus? Fugiat
+                consequatur quia expedita molestias nobis! Id dolorum laudantium
+                ipsum minima praesentium consequuntur consequatur quisquam
+                ratione ex dignissimos esse, excepturi pariatur nisi aliquam
+                delectus quidem quod magni enim fuga dolore! Placeat adipisci
+                tempore recusandae repellat asperiores odio hic eligendi! Ipsa
+                aut nostrum, consequuntur atque quis nobis autem soluta
+                reiciendis voluptates, placeat officiis accusantium qui nulla
+                voluptatum voluptatem unde! Modi!
+                <delectus class="lorem"></delectus>
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Band: Metallica</li>
+              <li class="list-group-item">Genre: Rock - Metal</li>
+              <li class="list-group-item">Duration: 1:03</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- EXERCISE 5
             Worst album list! Find out the music you don't really like or you find overrated and list it
             in this "hall of shame" chart!
@@ -102,5 +398,15 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
          EXERCISE 11
             Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
         -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
